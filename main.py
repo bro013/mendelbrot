@@ -39,7 +39,7 @@ if __name__ == "__main__":
     plt.figure(figsize=(8, 8))
     contour = plt.contourf(X, Y, matrix, levels=100)
     plt.colorbar(contour, label='Iterations')
-    plt.title("Mandelbrot Set (Contour Plot)")
+    plt.title("Mandelbrot Set")
     plt.xlabel("Re")
     plt.ylabel("Im")
     plt.axis('equal')
