@@ -4,7 +4,7 @@ from numba import njit
 import time
 
 @njit
-def mendelbrot(c:np.number, max_iterations=1000):
+def mandelbrot(c:np.number, max_iterations=1000):
     bound = 2
     z=0
     i=0
@@ -14,12 +14,12 @@ def mendelbrot(c:np.number, max_iterations=1000):
     return i
 
 @njit
-def mendelbrot_matrix(X:np.array,Y:np.array):
+def mandelbrot_matrix(X:np.array,Y:np.array):
     matrix=np.zeros((X.size,Y.size))
     for i in range(X.size):
         for j in range(Y.size):
             z=complex(X[i], Y[j])
-            matrix[j,i] = mendelbrot(z)
+            matrix[j,i] = mandelbrot(z)
     return matrix
 
 
@@ -31,7 +31,7 @@ if __name__ == "__main__":
     print("Started calculations...")
     
     start = time.time()
-    matrix=mendelbrot_matrix(X,Y)
+    matrix=mandelbrot_matrix(X,Y)
     end = time.time()
     
     print(f"Execution time: {end - start:.4f} seconds")

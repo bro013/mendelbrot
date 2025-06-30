@@ -1,8 +1,8 @@
-# Mendelbrot
+# Mandelbrot
 
-The Mendelbrot set the the set of all complex numbers that does not diverges when starting with z = 0 and the next value is updated by the function f(z) = z^2 + c
+The Mandelbrot set the the set of all complex numbers that does not diverges when starting with z = 0 and the next value is updated by the function f(z) = z^2 + c
 
-![Mendelbrot](images/Mendelbrot.png "Mendelbrot")
+![Mandelbrot](images/Mandelbrot.png "Mandelbrot")
 
 ## Installation
 
